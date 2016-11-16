@@ -1,0 +1,70 @@
+# (subset of) Eliza v0.2
+# Run  sendmail -bt -Celiza.cf  to test it.
+# Start each sentence with  eliza <your message>
+V10
+
+Seliza
+R$* can you $*	$@ Don't you believe that I can $>e1 $>e2 $2
+R$* can i $*	$@ Perhaps you would like to be able to $>e1 $>e2 $2
+R$* you are $*	$@ What makes you think I am $>e1 $>e2 $2
+R$* you're $*	$@ Does it please you to believe I am $>e1 $2
+R$* i dont $*	$@ Why don't you $>e1 $>e2 $2
+R$* i feel $*	$@ Do you enjoy feeling $>e1 $>e2 $2
+R$* why dont you $*	$@ Do you want me to $>e1 $2
+R$* why cant i $*	$@ Why can't you $>e1 $2
+R$* are you $*	$@ Would you prefer if I were not $>e1 $2
+R$* i can't $*	$@ Have you tried?
+R$* i can not $*	$@ How do you know you can't $>e1 $>e2 $2
+R$* i am $*	$@ Do you believe it is normal to be $>e1 $>e2 $2
+R$* i'm $*	$@ Do you enjoy being $>e1 $>e2 $2
+R$* you $*	$@ Oh, I $>e1 $2
+R$* i want $*	$@ Why do you want $>e1 $>e2 $2
+R$* what $*	$@ Does that question interest you?
+R$* how $*	$@ What answer would please you the most?
+R$* who $*	$@ What do you think?
+R$* where $*	$@ Are such questions on you mind often?
+R$* when $*	$@ What is it that you really want to know?
+R$* why $*	$@ Have you asked such questions before?
+R$* name $*	$@ I don't care about names -- please go on.
+R$* cause $*	$@ What other reasons might there be?
+R$* sorry $*	$@ Please don't apologize!
+R$* dream $*	$@ What does that dream suggest to you?
+R$* hello $*	$@ How do you do ... please state your problem.
+R$* hi $*	$@ How do you do ... please state your problem.
+R$* maybe $*	$@ Why the uncertain tone?
+R$* no $*	$@ Are you saying no just to be negative?
+R$* your $*	$@ Why are you concerned about my $>e1 $>e2 $2
+R$* always $*	$@ Really, always?
+R$* think $*	$@ But you are not sure you $>e1 $>e2 $2
+R$* alike $*	$@ What resemblence do you see?
+R$* yes $*	$@ Are you sure?
+R$* friend $*	$@ Why do you bring up the topic of friends?
+R$* computer $*	$@ Are you talking about me in particular?
+R$*		$@ Please elaborate.
+
+Se1
+R$* are $*	$: $1 +am $2
+R$* am $*	$: $1 are $2
+R$* +am $*	$: $1 am $2
+R$* were $*	$: $1 +was $2
+R$* was $*	$: $1 were $2
+R$* +was $*	$: $1 was $2
+R$* your $*	$: $1 +my $2
+R$* my $*	$: $1 your $2
+R$* +my $*	$: $1 my $2
+R$* i've $*	$: $1 +you've $2
+R$* you've $*	$: $1 I've $2
+R$* +you've $*	$: $1 you've $2
+R$* i'm $*	$: $1 +you're $2
+R$* you're $*	$: $1 I'm $2
+R$* +you're $*	$: $1 you're $2
+R$* me $*	$: $1 +you $2
+R$* you $*	$: $1 me $2
+R$* i $*	$: $1 you $2
+R$* +you $*	$: $1 you $2
+R$*		$@ $1
+
+Se2
+R$* . $*		$@ $1 ? $2
+R$* ! $*		$@ $1 ? $2
+R$* ? $*		$@ $1 . $2

@@ -1,0 +1,7 @@
+# hex to binary converter
+#
+# > source h2b
+# > echo "48656c6c6F0A" | h2b
+# Hello
+#
+h2b () { (echo 16i;tr a-f A-F|sed 's/\(..\)/\1P/g')|dc; }

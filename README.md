@@ -18,6 +18,15 @@ e1                 input: not very helpful ?
 e1               returns: not very helpful ?
 eliza            returns: What makes you think I am not very helpful ?
 ````
+
+## h2b
+
+Convert ascii-file with hex-data into binary.
+
+> source h2b
+> echo "48656c6c6F0A" | h2b
+Hello
+
 ## seds.sh 
 
 Search wordlist for words that works as a sed substitution command and the words that gets
@@ -41,4 +50,4 @@ xterm: DISPLAY is not set
 > xsh remote.host.example.com xterm
 << xterm magically apears >>
 ````
-(Don't use this. If your sysadmin turned it off (s)he probably had a good reason.
+(Don't use this. If your sysadmin turned it off (s)he probably had a good reason.)

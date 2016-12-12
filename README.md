@@ -23,9 +23,11 @@ eliza            returns: What makes you think I am not very helpful ?
 
 Convert ascii-file with hex-data into binary.
 
+````
 > source h2b
 > echo "48656c6c6F0A" | h2b
 Hello
+````
 
 ## seds.sh 
 
